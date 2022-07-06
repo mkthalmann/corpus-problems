@@ -111,3 +111,27 @@ ggsave(
     dpi = "retina",
     units = "in"
 )
+
+p_5_novar <- d %>%
+    head(12) %>%
+    ggplot(aes(x = condition, y = frequency, color = condition, fill = condition)) +
+    stat_summary(fun = mean, geom = "bar", width = .8, alpha = .7, size = 1) +
+    scale_color_manual(values = colors) +
+    guides(fill = "none", color = "none") +
+    scale_y_continuous(limits = c(0, 150), expand = c(0.001, 0)) +
+    coord_cartesian(clip = "off") +
+    labs(
+        x = "",
+        y = "Total frequency, 6 texts"
+    ) +
+    theme_mt(base_size = 24)
+
+ggsave(
+    here("media", "boots-novar.pdf"),
+    p_5_novar,
+    device = cairo_pdf,
+    width = 12,
+    height = 7.5,
+    dpi = "retina",
+    units = "in"
+)

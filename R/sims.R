@@ -57,7 +57,7 @@ alldiffs <- alldiffs %>%
     ) %>%
     mutate(
         truediff = factor(truediff, ordered = T),
-        sample = glue::glue("{sample1}/{sample2} Samples from Distribution"),
+        sample = glue::glue("{sample1}/{sample2} Samples from Poisson Distribution"),
         sig_percent = significant / 10000,
         insig_percent = `not significant` / 10000
     )
@@ -94,7 +94,7 @@ ggsave(
 p_sim_scatter <- d_all %>%
     mutate(
         truediff = factor(truediff, ordered = T),
-        sample = glue::glue("{sample1}/{sample2} Samples from Distribution"),
+        sample = glue::glue("{sample1}/{sample2} Samples from Poisson Distribution"),
     ) %>%
     ggplot(aes(x = truediff, y = p.value, color = psig)) +
     geom_scattermore(
@@ -111,7 +111,7 @@ p_sim_scatter <- d_all %>%
         x = "(True) Difference Factor (10 * X)",
         y = "*p* Value 2-Sample *t*-Tests (*N*<sub>*i*</sub> = 10,000)"
     ) +
-    theme_mt(base_size = 22)
+    theme_mt(base_size = 21)
 
 
 ggsave(
@@ -119,7 +119,7 @@ ggsave(
     p_sim_scatter,
     device = cairo_pdf,
     width = 28,
-    height = 10,
+    height = 12,
     dpi = "retina",
     units = "in"
 )
