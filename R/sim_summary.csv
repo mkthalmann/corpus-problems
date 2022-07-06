@@ -1,0 +1,81 @@
+psig,n,truediff,sample1,sample2
+not significant,9520,1,15,15
+significant,480,1,15,15
+not significant,8697,1.1,15,15
+significant,1303,1.1,15,15
+not significant,6495,1.2,15,15
+significant,3505,1.2,15,15
+not significant,1407,1.4,15,15
+significant,8593,1.4,15,15
+not significant,390,1.5,15,15
+significant,9610,1.5,15,15
+not significant,9509,1,15,30
+significant,491,1,15,30
+not significant,8374,1.1,15,30
+significant,1626,1.1,15,30
+not significant,5260,1.2,15,30
+significant,4740,1.2,15,30
+not significant,543,1.4,15,30
+significant,9457,1.4,15,30
+not significant,74,1.5,15,30
+significant,9926,1.5,15,30
+not significant,9544,1,15,12
+significant,456,1,15,12
+not significant,8794,1.1,15,12
+significant,1206,1.1,15,12
+not significant,6859,1.2,15,12
+significant,3141,1.2,15,12
+not significant,2027,1.4,15,12
+significant,7973,1.4,15,12
+not significant,672,1.5,15,12
+significant,9328,1.5,15,12
+not significant,9502,1,15,25
+significant,498,1,15,25
+not significant,8415,1.1,15,25
+significant,1585,1.1,15,25
+not significant,5567,1.2,15,25
+significant,4433,1.2,15,25
+not significant,667,1.4,15,25
+significant,9333,1.4,15,25
+not significant,117,1.5,15,25
+significant,9883,1.5,15,25
+not significant,9494,1,30,15
+significant,506,1,30,15
+not significant,8494,1.1,30,15
+significant,1506,1.1,30,15
+not significant,5619,1.2,30,15
+significant,4381,1.2,30,15
+not significant,692,1.4,30,15
+significant,9308,1.4,30,15
+not significant,116,1.5,30,15
+significant,9884,1.5,30,15
+not significant,9497,1,30,30
+significant,503,1,30,30
+not significant,7826,1.1,30,30
+significant,2174,1.1,30,30
+not significant,3679,1.2,30,30
+significant,6321,1.2,30,30
+not significant,80,1.4,30,30
+significant,9920,1.4,30,30
+not significant,3,1.5,30,30
+significant,9997,1.5,30,30
+not significant,9483,1,30,12
+significant,517,1,30,12
+not significant,8708,1.1,30,12
+significant,1292,1.1,30,12
+not significant,6356,1.2,30,12
+significant,3644,1.2,30,12
+not significant,1212,1.4,30,12
+significant,8788,1.4,30,12
+not significant,305,1.5,30,12
+significant,9695,1.5,30,12
+not significant,9482,1,30,25
+significant,518,1,30,25
+not significant,8014,1.1,30,25
+significant,1986,1.1,30,25
+not significant,4125,1.2,30,25
+significant,5875,1.2,30,25
+not significant,150,1.4,30,25
+significant,9850,1.4,30,25
+not significant,5,1.5,30,25
+significant,9995,1.5,30,25
