@@ -21,10 +21,16 @@ p_shift_1 <- d_time %>%
     ggplot(
         aes(x = condition, y = percentage, color = stage, fill = stage)
     ) +
-    geom_col(alpha = .8, position = position_dodge(width = .7), width = .5) +
+    geom_col(
+        alpha = .7,
+        position = position_dodge(width = .7),
+        width = .5,
+        size = 2
+    ) +
     scale_y_percent() +
     geom_text(
-        aes(label = glue::glue("{percentage*100}%"), y = percentage + 0.01),
+        aes(label = glue::glue("{percentage*100}%"), y = percentage + 0.015),
+        fontface = "bold",
         position = position_dodge(width = .7),
         size = 10,
     ) +
@@ -52,10 +58,14 @@ p_shift_2 <- d_time %>%
         aes(x = condition, y = percentage, color = stage, fill = stage)
     ) +
 
-    geom_col(alpha = .8, position = position_dodge(width = .7), width = .5) +
+    geom_col(
+        alpha = .7,
+        position = position_dodge(width = .7), width = .5, size = 2
+    ) +
     scale_y_percent() +
     geom_text(
-        aes(label = glue::glue("{percentage*100}%"), y = percentage + 0.01),
+        aes(label = glue::glue("{percentage*100}%"), y = percentage + 0.015),
+        fontface = "bold",
         position = position_dodge(width = .7),
         size = 10,
     ) +

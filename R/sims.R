@@ -70,7 +70,7 @@ p_sim <- ggplot(alldiffs, aes(
     color = "#066b8a",
     fill = "#066b8a"
 )) +
-    geom_col(alpha = .8) +
+    geom_col(alpha = .7, size = 1) +
     facet_wrap(~sample, ncol = 4) +
     scale_color_manual(values = colors) +
     guides(color = "none", fill = "none") +
@@ -79,7 +79,14 @@ p_sim <- ggplot(alldiffs, aes(
         x = "(True) Difference Factor (10 * X)",
         y = "Significant 2-Sample *t*-Tests (*N*<sub>*i*</sub> = 10,000)"
     ) +
-    theme_mt(base_size = 15)
+    theme_mt(base_size = 17) +
+    theme(
+        strip.text.x = element_markdown(
+            margin = margin(),
+            size = 18,
+            face = "plain"
+        )
+    )
 
 ggsave(
     here("media", "sim.pdf"),
